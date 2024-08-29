@@ -1,0 +1,17 @@
+.card-body{
+    height: 100px;
+    overflow-x:scroll ;
+        
+}
+
+.card-header{
+    height: 250px;
+}
+img{
+    height: 200px;
+}
+.card{
+    position: relative;
+    top: 15px;
+    height: 500px;
+}

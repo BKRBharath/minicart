@@ -1,0 +1,25 @@
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>title</th>
+        <!-- <th>description</th>
+        <th>price</th>
+        <th>category</th> -->
+        <th>image</th>
+        <th>username</th>
+        <th>address</th>
+        <!-- <th>paymenttype</th> -->
+    </tr>
+    <tr *ngFor="let o of allorders">
+        <td>{{o.id}}</td>
+        <td>{{o.title}}</td>
+        <!-- <td>{{o.description}}</td>
+        <td>{{o.price}}</td>
+        <td>{{o.category}}</td> -->
+        <td><img src="{{o.image}}" width="100" height="100" alt=""></td>
+        <td>{{o.username}}</td>
+        <td>{{o.address}}</td>
+        <!-- <td>{{o.paymenttype}}</td> -->
+
+    </tr>
+</table>

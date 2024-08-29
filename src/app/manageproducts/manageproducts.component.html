@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let p of productlist">
+        <div class="card">
+            <div class="card-header">
+                <img src="{{p.image}}" height="100" width="100" alt="">
+                <span class="text h3">{{p.title}}</span>
+            </div>
+            <div class="card-body" *ngIf="!p.pflag">
+                <p class="m-b-o">Price : {{p.price}}</p>
+                <p class="m-b-o">Description : {{p.description}}</p>
+            </div>
+            <div class="card-body" *ngIf="p.pflag">
+               <label class="form-label">Title</label>
+               <input type="text" class="form-control" [(ngModel)]="p.title">
+               <label for="" class="form-label">Price</label>
+               <input type="text" class="form-control" [(ngModel)]="p.price">
+               <label for="" class="form-label">Description</label>
+               <input type="text" class="form-control" [(ngModel)]="p.description">
+
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-warning " *ngIf="!p.pflag" (click)="editcontent(p)">Edit</button>
+                <button class="btn btn-warning " *ngIf="p.pflag" (click)="updateproduct(p)">Update</button>
+                <button class="btn btn-warning " (click)="deleteme(p.id)" id="btn-del">Delete</button>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-12" id="loginform">
+
+      <form class="example-form" [formGroup]="loginForm" (ngSubmit)="checkLogin()">
+        <h1>Login</h1>
+        <mat-form-field class="transparent-input" hintLabel="Max 10 characters">
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="username" name="uname">
+        </mat-form-field><br>
+        <mat-form-field class="transparent-input" hintLabel="Max 10 characters">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" name="pwd">
+        </mat-form-field><br>
+
+        <button class="btn btn-success" [disabled]="!loginForm.valid" type="submit">Login</button>
+        <button class="btn btn-danger" type="reset">Cancel</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="login-box">
+ 
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Password</label>
+      </div>
+      <a href="/admin/home">
+             SEND
+         <span></span>
+      </a>
+    </form>
+  </div> -->

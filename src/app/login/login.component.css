@@ -1,0 +1,40 @@
+.container-fluid{
+    background-image: url("https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg.webp");
+    height: 100%;
+    width: 100%;
+}
+#loginform{
+    border: 2px solid rgba(63, 55, 55,0.3);
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 650px;
+    background-color: rgba(192, 163, 163,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+.transparent-input .mat-form-field-flex {
+  background: transparent;
+}
+
+.transparent-input .mat-form-field-infix {
+  background: transparent;
+}
+
+.transparent-input .mat-input-element {
+  background: transparent;
+  border: none;
+}
+
+
+
+
