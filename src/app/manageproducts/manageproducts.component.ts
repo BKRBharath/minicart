@@ -27,19 +27,21 @@ export class ManageproductsComponent {
   newp:any;
   updateproduct(p:any){
     p.pflag=false;
-    this.newp={
-      id:p.id,
-      title:p.title,
-      price:p.price,
-      description:p.description,
-      category:p.category,
-      image:p.image,
-      pflag:p.false,
+    // this.newp={
+    //   id:p.id,
+    //   title:p.title,
+    //   price:p.price,
+    //   description:p.description,
+    //   category:p.category,
+    //   image:p.image,
+    //   pflag:p.false,
 
-    }
-    this.service.update(p.id,this.newp).subscribe((res)=>{
-      alert(res)
-    })
+    // }
+    // this.service.update(p.id).subscribe((res)=>{
+    //   alert(res)
+    let res=this.service.update(p.id)
+    alert(res);
+    
   }
 
 

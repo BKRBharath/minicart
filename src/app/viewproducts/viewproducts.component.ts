@@ -35,7 +35,7 @@ export class ViewproductsComponent {
 
     Swal.fire({
       title:"Good Job !",
-      text:"Product added to cart",
+      text:"Product added to favorite",
       icon:'success'
  
     })
